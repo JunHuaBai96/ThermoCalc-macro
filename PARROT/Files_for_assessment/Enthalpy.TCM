@@ -1,0 +1,31 @@
+@@
+@@ Enthalpy of formation at 298.15 K
+@@ Calculation and comparison to experiments + ab-initio
+@@
+@advanced-option global yes,,
+
+go p-3
+def-comp ,,,
+s-c t=298.15 p=1e5 n=1 x(sn)=.5
+s-a-v 1 x(sn) 0 1 ,,,
+c-e
+s-c x(sn)=.2
+c-e
+ch-st ph gas=sus
+$sa Hform y
+step,,
+
+pos
+s-d-a x m-f sn
+s-d-a y hmr
+se-re-st sn bct 298.15 
+
+
+ap y Hform 1:1
+se-ax-tex x n x(Sn)
+se-ax-tex y n Enthalpy of formation (J.mol-1)
+s_sc y n -20000 5000
+plot,,
+@@du pdf m Hform y
+
+set-inter

@@ -1,0 +1,133 @@
+@@ As-Sn setup file
+@@ Database:USER                    
+ go gibbs
+ ent-el  /- VA AS SN  
+ am_el_d /-  ELECTRON_GAS              0.0000E+00  0.0000E+00  0.0000E+00 1
+ am_el_d VA  VACUUM                    0.0000E+00  0.0000E+00  0.0000E+00 1
+ am_el_d AS  RHOMBOHEDRAL_A7           7.4922E+01  0.0000E+00  0.0000E+00 2
+ am_el_d SN  BCT_A5                    1.1871E+02  6.3220E+03  5.1195E+01 2
+ 
+ enter-specie AS-3                        AS1/-3
+ enter-specie AS2                         AS2
+ enter-specie AS4                         AS4
+ enter-specie SN+2                        SN1/+2
+ enter-specie SN2                         SN2
+ enter-specie VA-2                        VA1/-2
+ enter-specie VA-4                        VA1/-4
+ 
+@@ Warning: Functions may not be in correct order
+@@ Move all "set-fix" to the end before create work
+@@ Other constants or variables may need editing
+ ent-sym fun AS1G     298.15 +272027.85-32.2533338*T-21.21551*T*LN(T)
+     +4.3891495E-04*T**2-7.393995E-08*T**3+9666.555*T**(-1); 1800 Y
+      +293094.184-133.732322*T-8.281945*T*LN(T)-.002703715*T**2
+     +3.43112833E-08*T**3-6025190*T**(-1); 3700 Y
+      +260892.566-76.0337618*T-14.46743*T*LN(T)-.002830183*T**2
+     +8.062755E-08*T**3+16685580*T**(-1); 6400 Y
+      -42687.3967+565.669048*T-87.99118*T*LN(T)+.005136275*T**2
+     -8.21615833E-08*T**3+2.534398E+08*T**(-1); 60000 N
+ ent-sym fun AS2G     298.15 +179351.548+10.5519715*T-37.35966*T*LN(T)
+     -5.61806E-05*T**2-2.13098E-08*T**3+104881.15*T**(-1); 2200 Y
+      +190396.109-11.4088459*T-35.19088*T*LN(T)+8.55731E-04*T**2
+     -1.59161083E-07*T**3-5169920*T**(-1); 4500 Y
+      +461366.155-824.888486*T+62.44495*T*LN(T)-.014841615*T**2
+     +3.152775E-07*T**3-1.469506E+08*T**(-1); 6000 N
+ ent-sym fun AS4G     298.15 +129731.745+230.754352*T-83.04465*T*LN(T)
+     -2.5148475E-05*T**2+1.00444733E-09*T**3+252728.45*T**(-1); 6000 N
+ ent-sym fun SN1G     298.15 +299805.017-138.265505*T-2.769934*T*LN(T)
+     -.025123235*T**2+2.91121E-06*T**3-225080.65*T**(-1); 500 Y
+      +299818.158-153.051454*T+.006576569*T*LN(T)-.031759785*T**2
+     +5.12529167E-06*T**3-157706.25*T**(-1); 900 Y
+      +259620.873+283.605387*T-63.72523*T*LN(T)+.0132323*T**2
+     -8.43548E-07*T**3+4603149.5*T**(-1); 2000 Y
+      +305551.58+10.5671679*T-27.57385*T*LN(T)+5.86253E-04*T**2
+     -1.41879667E-08*T**3-6339225*T**(-1); 6600 Y
+      +330332.682-10.4578956*T-25.61849*T*LN(T)+7.907715E-04*T**2
+     -2.626045E-08*T**3-39037215*T**(-1); 10000 N
+ ent-sym fun SN2G     298.15 +415023.293-24.276484*T-36.02127*T*LN(T)
+     -.005866135*T**2+7.95920667E-07*T**3-134064.05*T**(-1); 1100 Y
+      +418717.2-28.8639587*T-36.06067*T*LN(T)-.003023904*T**2
+     +1.82022167E-07*T**3-1196854*T**(-1); 3000 Y
+      +318814.516+319.93647*T-78.71578*T*LN(T)+.0048371295*T**2
+     -7.82327E-08*T**3+41752485*T**(-1); 6000 N
+ ent-sym fun GLIQAS   298.15 +24442.9-22.424679*T+GHSERAS ; 1200 N
+ ent-sym fun GLIQSN   100 +7103.092-14.087767*T+GHSERSN +1.47031E-18*T**7; 
+     505.08 Y
+      +6971.586-13.814383*T+GHSERSN +1.2307E+25*T**(-9); 800 Y
+      -1285.372+125.182498*T-28.4512*T*LN(T); 3000 N
+ ent-sym fun GHSERSN  100 -7958.517+122.765451*T-25.858*T*LN(T)
+     +5.1185E-04*T**2-3.192767E-06*T**3+18440*T**(-1); 250 Y
+      -5855.135+65.443315*T-15.961*T*LN(T)-.0188702*T**2+3.121167E-06*T**3
+     -61960*T**(-1); 505.08 Y
+      +2524.724+4.005269*T-8.2590486*T*LN(T)-.016814429*T**2
+     +2.623131E-06*T**3-1081244*T**(-1)-1.2307E+25*T**(-9); 800 Y
+      -8256.959+138.99688*T-28.4512*T*LN(T)-1.2307E+25*T**(-9); 3000 N
+ ent-sym fun GHSERAS  298.15 -7270.447+122.211069*T-23.3144*T*LN(T)
+     -.00271613*T**2+11600*T**(-1); 1090 Y
+      -10454.913+163.457433*T-29.216037*T*LN(T); 1200 N
+ ent-sym f UN_ASS 298.15 +0; 300 N 
+ 
+
+
+ ent-phase GAS  G,  1   
+     AS,AS2,AS4,SN,SN2 ;  N N
+
+   ent-param G(GAS,AS;0)                  298.15 +AS1G+RTLNP; 6000 N
+   ent-param G(GAS,AS2;0)                 298.15 +AS2G+RTLNP; 6000 N
+   ent-param G(GAS,AS4;0)                 298.15 +AS4G+RTLNP; 6000 N
+   ent-param G(GAS,SN;0)                  298.15 +SN1G+RTLNP; 6000 N
+   ent-param G(GAS,SN2;0)                 298.15 +SN2G+RTLNP; 6000 N
+
+
+ ent-phase LIQUID  ,  1   
+     AS,SN ;  N N
+
+   ent-param G(LIQUID,AS;0)               298.15 +GLIQAS; 1200 N
+   ent-param G(LIQUID,SN;0)               100 +GLIQSN; 3000 N
+   ent-param L(LIQUID,AS,SN;0)            298.15 +V1+V2*T; 3000 N
+   ent-param L(LIQUID,AS,SN;1)            298.15 +V3+V4*T; 3000 N
+   ent-param L(LIQUID,AS,SN;2)            298.15 +V5+V6*T; 3000 N
+
+
+ ent-phase BCT_A5  ,  1   
+     SN ;  N N
+
+   ent-param G(BCT_A5,SN;0)               100 +GHSERSN; 3000 N
+
+
+ ent-phase DIAMOND_A4  ,  1   
+     SN ;  N N
+
+   ent-param G(DIAMOND_A4,SN;0)           100 -9579.608+114.007785*T
+  -22.972*T*LN(T)-.00813975*T**2+2.7288E-06*T**3+25615*T**(-1); 298.15 Y
+   -9063.001+104.84654*T-21.5750771*T*LN(T)-.008575282*T**2
+  +1.784447E-06*T**3-2544*T**(-1); 800 Y
+   -10909.351+147.396535*T-28.4512*T*LN(T); 3000 N
+
+
+ ent-phase RHOMBOHEDRAL_A7  ,  1   
+     AS,SN ;  N N
+
+   ent-param G(RHOMBOHEDRAL_A7,AS;0)      298.15 +GHSERAS; 1200 N
+   ent-param G(RHOMBOHEDRAL_A7,SN;0)      100 +2035+GHSERSN; 3000 N
+   ent-param L(RHOMBOHEDRAL_A7,AS,SN;0)   298.15 +V10+V11*T; 3000 N
+   ent-param L(RHOMBOHEDRAL_A7,AS,SN;1)   298.15 +V12+V13*T; 3000 N
+   ent-param L(RHOMBOHEDRAL_A7,AS,SN;2)   298.15 +V14+V15*T; 3000 N
+   
+ ent-phase ASSN , 2 1 1
+     AS; SN; N N
+   ent-sym fun CPASSN  298.15 +V20*T*LN(T)+V21*T**2+V22*T**(-1)+V23*T**3;,,,,,
+     ent-param G(ASSN,AS:SN;0)  298.15 +V18+V19*T+CPASSN ;,,,,
+     
+  
+ ent-phase AS3SN4 , 2 3 4
+     AS; SN; N N
+   ent-sym fun CPAS3SN4  298.15 +V30*T*LN(T)+V31*T**2+V32*T**(-1)+V33*T**3;,,,,,
+     ent-param G(AS3SN4,AS:SN;0)  298.15 +V28+V29*T+CPAS3SN4 ;,,,,
+     
+ 
+  
+ go parrot
+@@ move "set-fix" lines here
+ create work
+ set-interactive

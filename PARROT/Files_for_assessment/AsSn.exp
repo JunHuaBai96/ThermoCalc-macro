@@ -1,0 +1,63 @@
+$
+$
+$
+ PROLOG 1
+ XSCALE 0 1500
+ YSCALE 0 100
+ XSCALE LINEAR
+ YSCALE LOG
+ XLENGTH 11.5
+ YLENGTH 11.5
+ TITLE
+ XTEXT T/K
+ YTEXT Heat capacity AsSn (J.mol-1.K-1)
+$
+$
+$
+$*************************************
+DATASET 1 
+$
+$***************************************
+$
+ATTRIBUTE CENTER
+CHARSIZE .4
+SYMBOLSIZE .3
+$
+CLIP OFF
+color 2
+0.05 .95 NMANS200' Calorimetry - Demidenko 1975
+
+CLIP ON
+
+color 2
+BLOCK X=C1; Y=C2; GOC=C3,MAWS200
+55  13.3
+60  14.5
+70  16.45
+80  18.05
+90  19.3
+100 20.3
+110 21.05
+120 21.65
+130 22.2
+140 22.65
+150 23.0
+160 23.35
+170 23.65
+180 23.85
+190 24.05
+200 24.25
+210 24.45
+220 24.60
+230 24.75
+240 24.90
+250 25.0
+260 25.1
+270 25.25
+273.15 25.3
+280 25.4
+290 25.5
+298.15 25.6
+300 25.6
+310 25.6
+BLOCKEND

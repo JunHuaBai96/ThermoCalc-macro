@@ -1,0 +1,26 @@
+@@
+@@ AsSn (Fcc) heat capacity
+@@ Calculation and comparison to expeiments
+@@
+go p-3
+def-comp,,
+ch-st p *=susp
+ch-st p assn=ent 0
+s-c t=1000 p=1e5 n=1 x(sn)=.5
+en fun cp=hm.t;
+s-a-v 1 t 0 1500 10
+c-e
+sa AsSn-Cp y
+step ,,,
+
+pos
+s-d-a x T
+s-d-a y cp
+ap y AsSn 1:1
+s-s y n 0 40
+s-s-s x 0 1000
+set-ax-tex x n T/K
+set-ax-tex y n Heat capacity AsSn (J.Mol-1.K-1)
+plot ,,,
+
+set-inter

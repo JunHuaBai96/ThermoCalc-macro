@@ -1,0 +1,37 @@
+@@
+@@ As-Sn phase diagram
+@@ Calculation and comparison to experiments
+@@
+go p-3
+def-comp,,,
+
+s-c p=1e5 t=1000 n=1 x(sn)=0.1
+c-e
+l-e,,,
+
+s-a-v 1 x(sn) 0 1 0.01
+s-a-v 2 t 200 5000,,
+ch-st ph gas=sus
+@ch-st ph as3sn4=sus
+@ch-st ph assn=sus
+
+
+
+
+@sa cpd y
+map,,
+
+po
+s-d-a x m-f as
+pl,,
+@?
+
+
+s-s-s y n 200 1100  
+a-e-d y exp_file.exp 0:1
+plo 
+
+ba
+ba
+
+set-inter

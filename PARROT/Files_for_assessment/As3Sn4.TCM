@@ -1,0 +1,26 @@
+@@
+@@ As3Sn4 heat capacity
+@@ Calculation and comparison to expeiments
+@@
+go p-3
+def-comp,,
+ch-st p *=susp
+ch-st p as3sn4=ent 0
+s-c t=1000 p=1e5 n=1 x(sn)=.57142857
+en fun cp=hm.t;
+s-a-v 1 t 0 1500 10
+c-e
+sa As3Sn4-Cp y
+step ,,,
+
+pos
+s-d-a x T
+s-d-a y cp
+ap y As3Sn4 1:1
+s-s y n 0 40
+s-s-s x n 0 1600
+set-ax-tex x n T/K
+set-ax-tex y n Heat capacity As3Sn4 (J.Mol-1.K-1)
+plot ,,,
+
+set-inter

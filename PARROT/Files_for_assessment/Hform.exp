@@ -1,0 +1,54 @@
+$
+$
+ PROLOG 1
+ XSCALE 0 1
+ YSCALE 0 -20
+ XSCALE LINEAR
+ YSCALE LOG
+ XLENGTH 11.5
+ YLENGTH 11.5
+ TITLE
+ XTEXT x(Sn)
+ YTEXT Enthalpy of formation (J.mol-1)
+$
+$
+$
+$*************************************
+DATASET 1 
+$
+$***************************************
+$
+ATTRIBUTE CENTER
+CHARSIZE .4
+SYMBOLSIZE .3
+$
+CLIP OFF
+color 2
+0.05 .95 NMANS200' Zaleska 1977
+
+color 6
+0.05 .90 NMANS100' DFT-LDA
+
+color 4
+0.05 .85 NMANS2'  DFT-GGA
+
+$
+CLIP ON
+$
+BLOCK X=C1; Y=C2; GOC=C3,MAWS200
+color 2
+0.5       -11500 S200
+0.5714286 -12428  S200
+
+BLOCK X=C1; Y=C2; GOC=C3,MAWS100
+color 6
+0.5       -9258   S100
+0.5714286 -9297   S100
+
+BLOCK X=C1; Y=C2; GOC=C3,MAWS2
+color 4
+0.5       -7983   S2
+0.5714286 -9849   S2
+
+BLOCKEND
+$
