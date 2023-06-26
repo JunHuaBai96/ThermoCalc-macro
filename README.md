@@ -1,4 +1,4 @@
-## ThermoCalc Macros
+# Computational Materials Science
 As part of the course titled "Computational Materials Science" (MM6010) taken by Prof. K C Hari Kumar
 
 ## Assignment 1
@@ -39,6 +39,9 @@ ADVANCED_OPTIONS in POLY_3 module is used initially. Traditional method of using
 
 ### Psuedo Binary Phase Diagram
 
-## Gas
+# Optimize
+Thermo-Calc official teaching video, video link is as follows:
+https://thermocalc.com/blog/how-to-do-a-calphad-assessment/?utm_term=Learn%20How%20to%20Do%20a%20CALPHAD%20Assessment&utm_campaign=Read%20the%20latest%20news%20from%20Thermo-Calc%20Software.%20&utm_content=email&utm_source=Act-On+Software&utm_medium=email
 
-### Kellog's (or Predominance Area) Diagram
+##  PARROT 
+Use the PARROT module in Thermo-Calc software to CALPHAD evaluation (using As-Sn system as an example)
