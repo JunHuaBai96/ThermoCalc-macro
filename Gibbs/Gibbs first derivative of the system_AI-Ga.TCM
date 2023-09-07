@@ -1,0 +1,26 @@
+@@ Log file generated 2023- 7-18
+ @@ Gibbs first derivative of the AI-Ga system
+ 
+GO DA
+SW U
+D-SYS
+Al GA
+GET
+GO P-3
+S-C
+N=1 P=101325 T=750 W(GA)=0.1
+L-C
+S-A-V
+1
+W(GA)
+0
+1
+.025
+step
+NORMAL
+PO
+S-D-A Y MU(GA)
+S-D-A X W-P GA
+S-S Y N 0 2E5
+PL
+SET-INTER

@@ -1,0 +1,36 @@
+@@ Log file generated 2023- 6-10
+ @@ Al-Ga
+
+GO DA
+SW U
+D-SYS
+Al GA
+GET
+GO P-3
+S-C
+N=1 P=101325 T=298.15 X(GA)=0.1
+L-C
+S-A-V
+1
+X(GA)
+0
+1
+.025
+S-A-V
+2
+T
+0
+2000
+
+MAP
+PO
+S-LAB
+D
+S-D-A
+Y
+T-K
+S-D-A X W-P GA
+S-S X N 0 80
+S-S Y N 600 950
+PL
+SET-INTER
