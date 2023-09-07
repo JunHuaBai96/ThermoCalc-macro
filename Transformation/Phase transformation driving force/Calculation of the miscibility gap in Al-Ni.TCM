@@ -1,0 +1,34 @@
+@@ Log file generated 2023- 08- 28
+ @@ Calculation of the miscibility gap in AL-NI
+
+go da
+sw u
+d-ele
+al ni
+rej ph /
+res ph BCC_A2 BCC_B2 LIQUID FCC_A1 L12 AL3NI5 AL3NI2 AL3NI
+get
+go p-3
+s-c n=1 p=101325 t=600 x(ni)=0.1
+c-e
+show X(L12,ni)
+show X(AL3NI,ni)
+s-c x(ni)=0.3
+c-e
+show X(AL3NI2,ni)
+s-c x(ni)=0.45
+c-e
+show X(AL3NI2,ni)
+show X(BCC_B2,ni)
+s-c x(ni)=0.6
+c-e
+show X(BCC_B2,ni)
+show X(AL3NI5,ni)
+s-c x(ni)=0.7
+c-e
+show X(L12,ni)
+s-c x(ni)=0.85
+c-e
+show X(L12#1,ni)
+show X(L12#2,ni)
+set-inter

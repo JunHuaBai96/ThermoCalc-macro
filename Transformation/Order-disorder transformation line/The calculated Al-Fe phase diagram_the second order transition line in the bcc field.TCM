@@ -1,0 +1,113 @@
+@@ Log file generated 2023- 08- 18
+ @@ Calculation of the second order transition line in the Bcc field of the Al-Fe system
+
+
+set-echo
+
+
+GO DA
+SW user
+D-SYS AL FE
+REJ PH /ALL
+@@ The BCC phase has B2 ordering in this system
+@@ Note that this is modelled with two sublattices
+@@ with both components in both sublattices
+REST PH LIQ BCC_B2 BCC_A2
+LI-SYS
+
+GET
+GO P-3
+
+advanced global_minimization y 10000
+
+@@ Set conditions where the B2 phase should be ordered
+SET-COND P=1E5,N=1,T=400,X(AL)=0.4
+COMP-EQ
+@@ Use option N in order to see how Al and Fe distribute
+@@ on the sublattices
+LIST-EQ
+
+N
+@&
+@@ Change the condition of Al amount to be that the site-fractions
+@@ in the two sublattices will have a certain difference. If they
+@@ are the same the B2 phase is disordered
+SET-COND X(AL)=NONE
+SET-COND Y(BCC_B2,FE#1)-Y(BCC_B2,FE#2)=0.1
+COMP-EQ
+LIST-EQ
+
+set-inter
+@&
+@@ Set the difference smaller. This is as close to the second order
+@@ transition as it is possible to be
+SET-COND Y(BCC_B2,FE#1)-Y(BCC_B2,FE#2)=1E-4
+COMP-EQ
+@@ Now vary the temperature using these conditions
+SET-AXIS-VAR 1
+T
+400
+2000
+10
+SAVE 1
+STEP NORMAL
+POST
+SET-DIA-AXIS X X(BCC_B2,FE)
+SET-DIA-AXIS Y T-K
+SET-SCAL X N 0 1
+SET-SCAL Y N 400 2000
+PLOT
+
+@&
+@@ Write on file for plotting together with phase diagram
+MAKE second_order_transition_Al-Fe
+BACK
+GO DA
+@@ Get data for all phases stable in Al-Fe
+REJ-SYS
+D-SYS AL FE
+L-SYS
+CONSTITUENT
+REJ PH /ALL
+REST PH LIQ BCC_B2 FCC_A1 BCC_A2 AL13FE4 AL2FE AL5FE2 AL5FE4
+GET
+GO P-3
+@@ Calculate an equilibrium where BCC is ordered
+S-C T=1300,P=1E5,N=1,X(AL)=0.4
+C-E
+@@ List the equilibrium. Note that option N gives the
+@@ constitution of the BCC phase and this shows that the
+@@ site-fractions are different in the two sublattices,
+@@ i.e. the BCC is ordered
+L-E
+
+N
+@&
+@@ Set axis
+S-A-V 1 X(AL)
+0
+1
+.025
+S-A-V 2 T
+500
+2000
+25
+SAVE 2
+MAP
+
+POST
+
+S-D-A X M-F FE
+S-D-A Y T
+PLOT
+
+@&
+@@ Append the previous line for the 2nd order transition
+A-E-D Y second_order_transition_Al-Fe
+0
+1
+S-S Y N 500 2000
+PLOT
+
+@&
+set-inter

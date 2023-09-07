@@ -1,0 +1,75 @@
+@@ Log file generated 2023-09-04
+ @@ Magnetic transformation of the Fe-C system
+
+set-echo
+
+GO DA
+SW FEDEMO
+D-SYS
+FE C
+rej ph GRAPHITE LAVES_PHASE_C14 CBCC_A12 CUB_A13 DIAMOND_FCC_A4 HCP_A3 KSI_CARBIDE M23C6 M5C2 M7C3
+GET
+GO P-3
+S-C
+N=1 P=101325 T=750 X(C)=0.1
+L-C
+S-A-V
+1
+X(C)
+0
+1
+.025
+step
+NORMAL
+PO
+S-D-A Y TC(CEMENTITE)
+S-D-A X W-P C
+S-D-A Y T-C
+S-S X N 0 6.69
+S-S Y N 0 1600
+PL
+
+@&
+@@ Write on file for plotting together with phase diagram
+MAKE Magnetic_Transformation_Fe-C
+BACK
+GO DA
+REJ-SYS
+D-SYS FE C
+L-SYS
+CONSTITUENT
+rej ph GRAPHITE LAVES_PHASE_C14 CBCC_A12 CUB_A13 DIAMOND_FCC_A4 HCP_A3 KSI_CARBIDE M23C6 M5C2 M7C3
+GET
+GO P-3
+S-C N=1 P=101325 T=750 X(C)=0.1
+L-C
+C-E
+S-A-V 1 X(C)
+0
+1
+.025
+S-A-V 2 T
+500
+2000
+25
+SAVE 2
+MAP
+
+POST
+
+S-D-A X W-P C
+S-D-A Y T-C
+S-S X N 0 6.69
+S-S Y N 0 1600
+PLOT
+
+@&
+@@ Append the previous line for the 2nd order transition
+A-E-D Y Magnetic_Transformation_Fe-C
+0
+1
+S-S Y N 0 1600
+PLOT
+
+@&
+set-inter

@@ -1,0 +1,352 @@
+@@ Log file generated 2023- 8-28
+ @@ Phase transformation driving force in Al-Ni
+
+ 
+s-g-v
+5
+ 
+go da
+sw u
+d-ele
+al ni
+rej ph /
+res ph BCC_A2 BCC_B2 LIQUID FCC_A1 L12 AL3NI5 AL3NI2 AL3NI
+get
+
+
+go p-3
+ADVANCED_OPTIONS
+MAJOR_CONSTITUENTS
+L12
+2
+ni
+al
+VA
+
+s-r-s
+al
+L12#1
+600
+101325
+s-r-s
+ni
+L12#1
+1223.15
+101325
+
+ent fun frac1=0.0000014
+
+ent fun frac2=0.25
+
+ent fun frac3=0.3871975
+
+ent fun frac4=0.4045569
+
+ent fun frac5=0.4756240
+
+ent fun frac6=0.5373820
+
+ent fun frac7=0.625
+
+ent fun frac8=0.7366545
+
+ent fun frac9=0.7508943
+
+ent fun frac10=0.9162909
+
+ch-st
+PHASES
+*
+sus
+ch-st
+PHASES
+L12#1
+ENTERED
+1
+ent fun cd1=gmr(L12#1).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac2
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac3
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac4
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac5
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac6
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac7
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac8
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac9
+c-e
+show gmr(L12#1)
+show cd1
+s-c x(ni)=frac10
+c-e
+show gmr(L12#1)
+show cd1
+
+ch-st
+PHASES
+AL3NI
+ENTERED
+1
+ent fun cd2=gmr(AL3NI).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac2
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac3
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac4
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac5
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac6
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac7
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac8
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac9
+c-e
+show gmr(AL3NI)
+show cd2
+s-c x(ni)=frac10
+c-e
+show gmr(AL3NI)
+show cd2
+
+ch-st
+PHASES
+AL3NI2
+ENTERED
+1
+ent fun cd3=gmr(AL3NI2).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac2
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac3
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac4
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac5
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac6
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac7
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac8
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac9
+c-e
+show gmr(AL3NI2)
+show cd3
+s-c x(ni)=frac10
+c-e
+show gmr(AL3NI2)
+show cd3
+
+ch-st
+PHASES
+BCC_B2
+ENTERED
+1
+ent fun cd4=gmr(BCC_B2).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac2
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac3
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac4
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac5
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac6
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac7
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac8
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac9
+c-e
+show gmr(BCC_B2)
+show cd4
+s-c x(ni)=frac10
+c-e
+show gmr(BCC_B2)
+show cd4
+
+ch-st
+PHASES
+AL3NI5
+ENTERED
+1
+ent fun cd5=gmr(AL3NI5).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac2
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac3
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac4
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac5
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac6
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac7
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac8
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac9
+c-e
+show gmr(AL3NI5)
+show cd5
+s-c x(ni)=frac10
+c-e
+show gmr(AL3NI5)
+show cd5
+
+ch-st
+PHASES
+L12#2
+ENTERED
+1
+ent fun cd6=gmr(L12#2).x(ni)
+
+s-c n=1 p=101325 t=600 x(ni)=frac1
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac2
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac3
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac4
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac5
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac6
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac7
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac8
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac9
+c-e
+show gmr(L12#2)
+show cd6
+s-c x(ni)=frac10
+c-e
+show gmr(L12#2)
+show cd6
+
+set-inter
+
+
+

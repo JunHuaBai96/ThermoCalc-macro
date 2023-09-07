@@ -1,0 +1,36 @@
+@@ Log file generated 2023- 09- 04
+ @@ The calculated Fe-C phase diagram
+
+go da
+sw FEDEMO
+d-ele
+fe c
+rej ph GRAPHITE LAVES_PHASE_C14 CBCC_A12 CUB_A13 DIAMOND_FCC_A4 HCP_A3 KSI_CARBIDE M23C6 M5C2 M7C3
+get 
+go p-3
+s-c n=1 p=101325 t=750 x(c)=0.1
+l-c
+c-e
+s-a-v
+1
+x(c)
+0
+1
+.025
+s-a-v
+2
+t
+0
+5000
+125
+map
+po
+S-D-A X W-P C
+S-D-A Y T-C
+S-S Y N 200 1600
+S-S X N 0 6.69
+S-LAB
+D
+PL
+
+set-inter
