@@ -1,0 +1,41 @@
+@@ Log file generated 2023- 9-1
+ @@ 
+
+ 
+ 
+ 
+s-g-v
+5
+go da
+sw u
+define-sys
+al fe cu
+get
+go p-3
+s-c n=1 p=101325 t=1023 w(Fe)=0.01
+l-c
+s-c w(Cu)=0.01
+l-c
+c-e
+s-a-v 1 t 300 2000 10
+step
+NORMAL
+po
+pl
+ 
+set-label
+f
+pl
+ 
+s-p-f
+16
+YES
+9
+.35833
+ 
+pl
+Al98Cu1Fe1(wt%)_Pre
+ 
+ 
+set-inter
+ 
