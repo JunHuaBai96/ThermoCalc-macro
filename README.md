@@ -66,7 +66,7 @@ Database source: Thermo-Calc Software /Iron Demo Database v4.0, https://thermoca
 Plot the phase transformation driving force from the L12 phase to other phase of Al-Ni system at 600K. 
 Step.1 Calculation of the miscibility gap in the Al-Ni system.
 Step.2 Calculation of phase transformation driving force from the L12 phase to other phase of the Al-Ni system at 600K.
-Database source: Walnsch A , Kriegel M J , Fabrichnaya O ,et al.Thermodynamic assessment and experimental investigation of the systems Al–Fe–Mn and Al–Fe–Mn–Ni[J].Calphad, 2019, 66:101621-.DOI:10.1016/j.calphad.2019.04.006.
+Database source: Walnsch A , Kriegel M J , Fabrichnaya O ,et al.Thermodynamic assessment and experimental investigation of the systems Al–Fe–Mn and Al–Fe–Mn–Ni[J].Calphad, 2019, 66:101621.DOI:10.1016/j.calphad.2019.04.006.
 
 # Solidification
 
