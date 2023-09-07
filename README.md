@@ -45,3 +45,37 @@ https://thermocalc.com/blog/how-to-do-a-calphad-assessment/?utm_term=Learn%20How
 
 ##  PARROT 
 Use the PARROT module in Thermo-Calc software to CALPHAD evaluation (using As-Sn system as an example)
+
+# Gibbs  
+
+## Gibbs Derivative of the system
+Plot the Gibbs first derivative and second derivative of the AI-Ga system. 
+Database source: Ansara I , Chatillon C , Lukas H L ,et al.A binary database for III-V compound semiconductor system[J].Calphad, 1994, 18(2):177–222.DOI:10.1016/0364-5916(94)90027-2.  
+
+# Transformation
+
+## Order-Disorder Transformation 
+Plot the second order transition line in the BCC field of the Al-Fe system.
+Database source: Chen H L , Du Y , Xu H ,et al.Experimental investigation and thermodynamic modeling of the ternary Al-Cu-Fe system[J].Metallurgical & Materials Transactions A, 2009, 24(10):3154-3164.DOI:10.1557/jmr.2009.0376.
+
+## Magnetic Transformation
+Plot the magnetic transformation line in the CEMENTITE phase of the Fe-C system.
+Database source: Thermo-Calc Software /Iron Demo Database v4.0, https://thermocalc.com/products/databases.
+
+## Driving Force
+Plot the phase transformation driving force from the L12 phase to other phase of Al-Ni system at 600K. 
+Step.1 Calculation of the miscibility gap in the Al-Ni system.
+Step.2 Calculation of phase transformation driving force from the L12 phase to other phase of the Al-Ni system at 600K.
+Database source: Walnsch A , Kriegel M J , Fabrichnaya O ,et al.Thermodynamic assessment and experimental investigation of the systems Al–Fe–Mn and Al–Fe–Mn–Ni[J].Calphad, 2019, 66:101621-.DOI:10.1016/j.calphad.2019.04.006.
+
+# Solidification
+
+## Scheil Solidification
+Calculation of the Scheil solidification path of the Al98Fe1Cu1(wt%).
+Database source: Chen H L , Du Y , Xu H ,et al.Experimental investigation and thermodynamic modeling of the ternary Al-Cu-Fe system[J].Metallurgical & Materials Transactions A, 2009, 24(10):3154-3164.DOI:10.1557/jmr.2009.0376.
+
+# Precipitation
+
+## Precipitation curve
+Calculation of the precipitation curve of the Al98Fe1Cu1(wt%).
+Database source: Chen H L , Du Y , Xu H ,et al.Experimental investigation and thermodynamic modeling of the ternary Al-Cu-Fe system[J].Metallurgical & Materials Transactions A, 2009, 24(10):3154-3164.DOI:10.1557/jmr.2009.0376.
